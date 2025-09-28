@@ -1,4 +1,4 @@
-package br.com.mercearia.pdv_api.controler;
+package br.com.mercearia.pdv_api.controller;
 
 import br.com.mercearia.pdv_api.dto.LoginRequestDTO;
 import br.com.mercearia.pdv_api.dto.LoginResponseDTO;
