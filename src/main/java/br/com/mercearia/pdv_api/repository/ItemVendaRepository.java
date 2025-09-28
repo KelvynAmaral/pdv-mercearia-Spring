@@ -8,6 +8,6 @@ import java.util.List;
 
 @Repository
 public interface ItemVendaRepository extends JpaRepository<ItemVenda, Long> {
-    // Exemplo: Buscar itens de venda por uma venda específica
+    // Buscar itens de venda por uma venda específica
     List<ItemVenda> findByVendaId(Long vendaId);
 }

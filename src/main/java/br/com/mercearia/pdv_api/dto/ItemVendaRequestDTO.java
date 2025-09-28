@@ -2,7 +2,6 @@ package br.com.mercearia.pdv_api.dto;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Positive;
 
 public record ItemVendaRequestDTO(
         @NotNull(message = "O ID do produto é obrigatório")

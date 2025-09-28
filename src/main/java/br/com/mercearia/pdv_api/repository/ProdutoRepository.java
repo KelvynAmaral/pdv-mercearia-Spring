@@ -7,5 +7,5 @@ import java.util.Optional;
 
 public interface ProdutoRepository extends JpaRepository<Produto, Long> {
     Optional<Produto> findByCodigo(String codigo); // Para buscar um produto pelo código
-    // O Spring Data JPA já nos dá métodos como findAll(), findById(), save(), deleteById()
+
 }

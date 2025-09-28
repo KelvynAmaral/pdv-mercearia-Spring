@@ -18,7 +18,7 @@ public class ProdutoService {
     @Autowired
     private ProdutoRepository produtoRepository;
 
-    @Transactional // Garante que a operação seja atômica
+    @Transactional
     public ProdutoResponseDTO criarProduto(ProdutoRequestDTO dto) {
         // Verifica se já existe um produto com o mesmo código
         if (produtoRepository.findByCodigo(dto.codigo()).isPresent()) {

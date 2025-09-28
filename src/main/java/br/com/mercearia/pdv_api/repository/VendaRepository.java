@@ -9,9 +9,9 @@ import java.util.List;
 
 @Repository
 public interface VendaRepository extends JpaRepository<Venda, Long> {
-    // Exemplo: Buscar vendas por um usuário específico
+    //Buscar vendas por um usuário específico
     List<Venda> findByUsuarioId(Long usuarioId);
 
-    // Exemplo: Buscar vendas em um período de tempo
+    //  Buscar vendas em um período de tempo
     List<Venda> findByDataHoraVendaBetween(LocalDateTime inicio, LocalDateTime fim);
 }
